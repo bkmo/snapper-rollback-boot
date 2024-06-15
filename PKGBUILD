@@ -18,7 +18,7 @@ source=("git+https://github.com/bkmo/snapper-rollback-boot"
         "04-snap-boot-pre-backup-hook"
         "zz-snap-boot-post-backup.hook")
 sha256sums=('SKIP'
-            '299598f8ab349d7b427af854506374e8f64a08fb0d9ecda39863bd00b2af00cf'
+            '3ad32bc61ea9df92c80581558cd32d9d4ffd8c5f231d83e6eef9873f653c8d36'
             '7474fee3f926e2ada2720cc4cd83f4365941ab3e29d77ad0eaae265c79a7ab8d')
 
 
