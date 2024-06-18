@@ -24,7 +24,6 @@ sha256sums=('SKIP'
     package() {
     install -Dm 0644  "04-snap-boot-pre-backup.hook" -t "$pkgdir/usr/share/libalpm/hooks/"
     install -Dm 0755  "rollback" -t "$pkgdir/usr/bin/"
-    install -Dm 0755  "rollback-rw" -t "$pkgdir/usr/bin/"
     install -Dm 0644  "$pkgname/snapper-rollback.conf" -t "$pkgdir/etc/"
     install -Dm 0755  "$pkgname/snapper-rollback.py" "$pkgdir/usr/bin/snapper-rollback"
 }
