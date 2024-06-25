@@ -128,11 +128,9 @@ def rollback(subvol_main, subvol_main_newname, subvol_rollback_src, dev, dry_run
 def rollback_boot_partiton(boot_backup_dir,dry_run):
     full_path = boot_backup_dir+"/boot"
     if dry_run: 
-        LOG.info("rm -rf /boot/*")
-        LOG.info("cp -a {}/* /boot/".format(full_path))
+        LOG.info("cp -ar {}/* /boot/".format(full_path))
     else:
-        os.system("rm -rf /boot/*")
-        os.system("cp -a {}/* /boot/".format(full_path))    
+        os.system("cp -ar {}/* /boot/".format(full_path))    
 
 
 def main():
