@@ -3,13 +3,14 @@
 # forked from https://github.com/jrabinow/snapper-rollback with bootbackup commits
 
 pkgname=snapper-rollback-boot
-pkgver=1.0.1
+pkgver=1.0.2
 pkgrel=1
 pkgdesc='Script to rollback snapper snapshots as described here https://wiki.archlinux.org/index.php/Snapper#Suggested_filesystem_layout'
 arch=('any')
 license=('GPL3')
 url='https://github.com/bkmo/snapper-rollback-boot'
-depends=('coreutils' 'python' 'btrfs-progs' 'snapper')
+depends=('coreutils' 'python' 'btrfs-progs' 'rsync')
+optdepends=('snapper')
 provides=('snapper-rollback')
 conflicts=('rollback-git' 'snapper-rollback')
 replaces=('rollback-git' 'snapper-rollback')
