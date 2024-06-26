@@ -128,9 +128,9 @@ def rollback(subvol_main, subvol_main_newname, subvol_rollback_src, dev, dry_run
 def rollback_boot_partiton(boot_backup_dir,dry_run):
     full_path = boot_backup_dir+"/boot"
     if dry_run: 
-        LOG.info("cp -af {}/* /boot/".format(full_path))
+        LOG.info("rsync -avzq --delete {}/* /boot/".format(full_path))
     else:
-        os.system("cp -af {}/* /boot/".format(full_path))    
+        os.system("rsync -avzq --delete {}/* /boot/".format(full_path))    
 
 
 def main():
