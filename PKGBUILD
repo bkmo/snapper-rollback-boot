@@ -3,7 +3,7 @@
 # forked from https://github.com/jrabinow/snapper-rollback with bootbackup commits
 
 pkgname=snapper-rollback-boot
-pkgver=1.0.2
+pkgver=1.0.3
 pkgrel=1
 pkgdesc='Script to rollback snapper snapshots as described here https://wiki.archlinux.org/index.php/Snapper#Suggested_filesystem_layout'
 arch=('any')
