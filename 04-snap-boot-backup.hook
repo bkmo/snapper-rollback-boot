@@ -19,4 +19,4 @@ Target = usr/lib/initcpio/*
 Description = Post-Transaction /boot backup...
 When = PostTransaction
 Exec = /usr/bin/bash -c 'rsync -arq --mkpath --delete /boot/ /.bootbackup/boot'
-
+Depends = rsync
